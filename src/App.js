@@ -15,6 +15,7 @@ function App() {
             <Route path={'/'} element={<Layout/>}>
                 <Route path={'/'} index element={<WelcomePage/>}></Route>
                 <Route path={'/chats'} element={<Chats/>}></Route>
+                <Route path={'/chats/:id'} element={<Chats/>}></Route>
                 <Route path={'/profile'} element={<Profile/>}></Route>
                 <Route path={'*'} element={<NotFoundPage/>}></Route>
             </Route>
